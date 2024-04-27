@@ -1,0 +1,178 @@
+:root {
+   --color-light: #ffffff;
+   --color-dark: #000000;
+   --color-pink: #dc143c;
+}
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+html {
+    font-size: 62,5%;
+}
+
+boby {
+    font-size: 1.6rem;
+}
+
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-image: linear-gradient(rgba(0,0,0, .8), rgba(0,0,0, .3)),
+    url(../images/pexels-felix-mittermeier-957002.jpg);
+}
+.container nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 0rem 1rem;
+    color: var(--color-light);
+}
+.container ul {
+    display: flex;
+    flex-direction:row ;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.logo-bg {
+    background-color: var(--color-pink);
+    border-radius: 0px 20px 0px 20px;
+    padding: 7px ;
+    
+}
+
+.header-menu a{
+    text-decoration: none;
+    color:var(--color-light);
+    font-weight: 600;
+    transform: .8s;
+    border: 1px solid transparent;
+    padding: 10px;
+    border-radius: 80px;
+    margin: 15px;
+}
+
+.header-menu a:hover {
+    color: var(--color-pink);
+    border: 1px solid #cccccc6b;
+}
+.cabessario {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 14rem;
+}
+
+.cabessario h1 {
+    padding-bottom: 1rem;
+    color: var(--color-light);
+    font-size: clamp(24px, 4vw, 40px);
+}
+
+.cabessario p {
+    color:var(--color-light);
+    padding-bottom: 2rem;
+    font-size: clamp(18px, 3vw, 30px);
+}
+
+.cabessario a {
+    border: var(--color-pink) solid 1px;
+    border-radius: 0px 20px 0px 20px;
+    background-color: var(--color-pink);
+    color:var(--color-light);
+    padding: 8px 30px;
+    width: 19%;
+ margin: 30px auto;
+ text-decoration: none;
+
+}
+
+.cabessario a:hover {
+    background-color: transparent;
+}
+
+
+
+main {
+    display: flex;
+    align-items: center;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2rem;
+}
+.card {
+    border: transparent solid 1px;
+    border-radius: 19px;
+    padding: 20px;
+    margin: 1rem;
+    box-shadow: 1px 2px 20px #ccc;
+    transition: 0.7s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover {
+    box-shadow: 1px 2px 20px var(--color-pink);
+}
+
+.card h3 {
+    color: var(--color-pink);
+}
+
+.card img {
+    height: 30vh;
+    width: 30vh;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.card-button {
+    border: 1px solid var(--color-pink);
+    background-color: var(--color-pink);
+    border-radius: 20px;
+    color: var(--color-light);
+    text-decoration: none;
+    padding: 6px;
+    margin-top: 5px;
+    transition: .7s
+}
+
+.card-button:hover {
+    border: 1px solid var(--color-pink);
+    background-color: transparent;
+    color: var(--color-dark);
+}
+
+.footer {
+    background-color: transparent;
+    color: var(--color-dark);
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.footer h2 {
+    font-size: .9rem;
+    font-weight: 100;
+}
